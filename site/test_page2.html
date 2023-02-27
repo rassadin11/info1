@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Собачки</title>
+
+    <style>
+        body {
+            font-family: "Montserrat";
+            background: rgb(255, 251, 251);
+            background: linear-gradient(90deg, rgba(255, 251, 251, 1) 0%, rgba(115, 223, 245, 1) 20%, rgba(217, 213, 89, 1) 60%, rgba(142, 72, 189, 1) 100%);
+            animation: 10s infinite ease-in animate;
+            background-size: 300% 300%;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .image {
+            flex: 0 0 24%;
+            width: 24%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1024px) {
+            .image {
+                flex: 0 0 49%;
+                width: 49%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .image {
+                flex: 0 0 100%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .list li {
+            margin: 0 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class='title'>Собачки</h1>
+    <p class="paragraph">В мире насчитывается около 400 самых разнообразных пород собак. Если посмотреть фотографии
+        собак разных пород, видно,
+        что их внешние данные, например, размер, тип шерсти, окрас и прочие характеристики очень сильно различаются.
+        Есть
+        совершенно разные собаки: очень крупные и очень маленькие, низкие и высокие, длинношерстные, гладкошерстные,
+        жесткошерстные, со стоячими или висячими ушами, с короткими или длинными хвостами и так далее.
+
+        Чтобы не ошибиться с выбором, сначала нужно определить, для какой цели вы заводите собаку. Все породы собак
+        делятся на
+        три основные группы: служебные, охотничьи и декоративные. Сейчас еще есть такое определение, как
+        собака-компаньон, то
+        есть собака-друг.
+
+        На этой странице вы найдете названия пород собак с фотографиями
+    </p>
+
+
+    <div class="flex">
+        <img src="https://img.freepik.com/free-photo/adorable-brown-and-white-basenji-dog-smiling-and-giving-a-high-five-isolated-on-white_346278-1657.jpg?w=1060&t=st=1677511632~exp=1677512232~hmac=1a5da27d0665dece8b71984632b81cc7db55b31ad8a344ac17b3764a2dd45d3c"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/adorable-greyhound-dog-with-reindeer-headband_23-2149901559.jpg?w=1060&t=st=1677511657~exp=1677512257~hmac=70438ef346dbd96d34d619bf98eeb6f4eb0b0dd41ad98fa46036b8869e98216b"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/little-young-dog-posing-cheerful_155003-28763.jpg?w=1060&t=st=1677512181~exp=1677512781~hmac=fa6f28958649f33b553d440011fd0b009856c2ad0f52e3ecddf9b3bf60489094"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/french-bulldog-young-dog-posing_155003-34898.jpg?w=1060&t=st=1677511709~exp=1677512309~hmac=7242a55e7c913b070b0357d06330de696bf5fe32ef3c29dfff2b2edc859fdcee"
+            alt="" class="image">
+    </div>
+
+    <ul class="list">
+        <li><a href="./test_page1.html" class="link">Котики</a></li>
+        <li><a href="./test_page3.html" class="link">Попугаи</a></li>
+    </ul>
+</body>
+
+</html>

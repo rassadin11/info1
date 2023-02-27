@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Котики</title>
+
+    <style>
+        body {
+            font-family: "Montserrat";
+            background: rgb(255, 251, 251);
+            background: linear-gradient(90deg, rgba(255, 251, 251, 1) 0%, rgba(115, 223, 245, 1) 20%, rgba(217, 213, 89, 1) 60%, rgba(142, 72, 189, 1) 100%);
+            animation: 10s infinite ease-in animate;
+            background-size: 300% 300%;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .image {
+            flex: 0 0 24%;
+            width: 24%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1024px) {
+            .image {
+                flex: 0 0 49%;
+                width: 49%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .image {
+                flex: 0 0 100%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .list li {
+            margin: 0 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class='title'>Котики</h1>
+    <p class="paragraph">
+        Котики... все любят котиков. Вот несколько потрясающих афорзмов, которые показывают всю нашу любовь к ним
+    </p>
+    <p class="paragraph">
+        Собака может быть прекрасной прозой, но только кошка – поэзией.
+
+        (Французская пословица)<br /><br />
+
+        Если бы животные могли говорить, собаки надоедали бы всем своей болтливостью. Зато кошки отличались бы редкой в
+        наше время немногословностью.
+
+        (Марк Твен)<br /><br />
+
+        Собаки помнят лица, коты помнят места.
+
+        (Английская пословица)<br /><br />
+
+        Я люблю их, они такие милые и эгоистичные. Собаки слишком хороши и бескорыстны. Они заставляют меня чувствовать
+        себя
+        некомфортно. Но кошки славно человечны.
+
+        (Люси Мод Монтгомери)<br /><br />
+    </p>
+
+
+    <div class="flex">
+        <img src="https://img.freepik.com/free-photo/beautiful-grey-tabby-cat-with-yellow-eyes-stands-white-floor_8353-7260.jpg?w=1060&t=st=1677507657~exp=1677508257~hmac=5db17f2913af4bb86a07c9970e0c77882132572abc6cd6953ca2feebd6394ea4"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/man-with-his-adorable-pet-cat_23-2150204958.jpg?w=1060&t=st=1677508192~exp=1677508792~hmac=8c3a7fcf53ea01d947da2a3559c9c23fcf260d779940d2edc89a545b0da66271"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/cat-lying_1160-435.jpg?w=1060&t=st=1677508241~exp=1677508841~hmac=22d5992ce802ed24d50265c8ba2af586945e92b10d7af7ba9f395c3bfd400f4f"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/closeup-shot-one-ginger-cat-hugging-licking-other-isolated-white-wall_181624-32893.jpg?w=1060&t=st=1677508256~exp=1677508856~hmac=a02cf00ca996f1cdb2f074a11e210a2d66c8052b0d7391fe24bae1a56252852e"
+            alt="" class="image">
+    </div>
+
+    <ul class="list">
+        <li><a href="./test_page2.html" class="link">Собачки</a></li>
+        <li><a href="./test_page3.html" class="link">Попугаи</a></li>
+    </ul>
+</body>
+
+</html>

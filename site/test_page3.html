@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Котики</title>
+
+    <style>
+        body {
+            font-family: "Montserrat";
+            background: rgb(255, 251, 251);
+            background: linear-gradient(90deg, rgba(255, 251, 251, 1) 0%, rgba(115, 223, 245, 1) 20%, rgba(217, 213, 89, 1) 60%, rgba(142, 72, 189, 1) 100%);
+            animation: 10s infinite ease-in animate;
+            background-size: 300% 300%;
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .image {
+            flex: 0 0 24%;
+            width: 24%;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 1024px) {
+            .image {
+                flex: 0 0 49%;
+                width: 49%;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .image {
+                flex: 0 0 100%;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+
+        .list {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            list-style-type: none;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .list li {
+            margin: 0 15px;
+        }
+
+        .link {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class='title'>Попугаи</h1>
+    <p class="paragraph">
+        Люблю попугаев ♥
+    </p>
+    <p class="paragraph">
+        Эти пестрые, щебечущие птицы живут в условиях тропиков и субтропиков. Более половины всех видов живут в
+        Австралии, почти
+        третья часть приходится на страны Южной и Центральной Америки, небольшая часть обитает в Африке и странах Южной
+        Азии. На
+        территории стран СНГ в естественных условиях эти птицы не проживают. Обычно попугаи живут в лесах, но могут
+        находиться и
+        в степных или горных условиях. В качестве жилища выбирают брошенные термитники, дупла или норы. Ведут
+        коллективный образ
+        жизни.
+    </p>
+
+
+    <div class="flex">
+        <img src="https://img.freepik.com/free-photo/closeup-shot-of-a-blue-and-yellow-parrot_181624-40963.jpg?w=900&t=st=1677511751~exp=1677512351~hmac=da494db5ddba605297b0b832f95c2e7c16fe59fc99ccdaf290c3077f52abf7ec"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/parrot-profile_1136-16.jpg?w=1060&t=st=1677511787~exp=1677512387~hmac=137caba43296f981780d4b518b2e082bd977cca7251935be65fb453763f87aa6"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/closeup-shot-of-a-colorful-parrot-with-big-green-leaves-on-the_181624-46005.jpg?w=1060&t=st=1677511807~exp=1677512407~hmac=391729b8350ec55e84f8035b4e4e94625c0d1661aa8547de9f3a39f2ddc05dc9"
+            alt="" class="image">
+        <img src="https://img.freepik.com/free-photo/closeup-shot-of-a-head-of-a-beutiful-sulphur-crested-cockatoo-with-a-cute-look-among-some-plants_181624-8660.jpg?w=996&t=st=1677511825~exp=1677512425~hmac=5c8b5a8b126ef05ae295a31f9f2d102783fafe58e36755cdb62e9e6be2ca262a"
+            alt="" class="image">
+    </div>
+
+    <ul class="list">
+        <li><a href="./test_page1.html" class="link">Котики</a></li>
+        <li><a href="./test_page2.html" class="link">Собачки</a></li>
+    </ul>
+</body>
+
+</html>
